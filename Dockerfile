@@ -7,4 +7,4 @@ ENV REDIS_PASSWORD=${REDIS_PASSWORD}
 
 RUN echo ${REDIS_PASSWORD}
 
-CMD [ "redis-server", "--requirepass", "${REDIS_PASSWORD}" ]
+CMD [ "redis-server", "--requirepass", "\"${REDIS_PASSWORD}\"" ]
