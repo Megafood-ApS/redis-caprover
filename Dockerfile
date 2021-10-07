@@ -5,4 +5,4 @@ ARG REDIS_PASSWORD
 
 ENV REDIS_PASSWORD=${REDIS_PASSWORD}
 
-CMD [ "redis-server", "--appendonly yes" ]
+CMD [ "redis-server"]
